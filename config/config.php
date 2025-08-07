@@ -11,7 +11,7 @@ class Config extends \Ilch\Config\Install
 {
     public $config = [
         'key' => 'checkout',
-        'version' => '1.6.1',
+        'version' => '1.6.2',
         'icon_small' => 'fa-regular fa-credit-card',
         'author' => 'Stantin, Thomas',
         'link' => 'https://ilch.de',
@@ -28,8 +28,8 @@ class Config extends \Ilch\Config\Install
         'phpExtensions' => [
             'intl'
         ],
-        'ilchCore' => '2.2.0',
-        'phpVersion' => '7.3'
+        'ilchCore' => '2.2.13',
+        'phpVersion' => '7.4'
     ];
 
     public function install()
@@ -97,6 +97,6 @@ class Config extends \Ilch\Config\Install
             case "1.5.0":
         }
 
-        return 'Update function executed.';
+        return '"' . $this->config['key'] . '" Update-function executed.';
     }
 }

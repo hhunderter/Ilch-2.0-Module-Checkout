@@ -7,7 +7,7 @@ $currency = $this->get('currency');
 ?>
 
 <h1>
-    <?=($currency) ? $this->getTrans('edit') : $this->getTrans('add') ?>
+    <?=$this->getTrans($currency->getId() ? 'edit' : 'add') ?>
 </h1>
 <form method="POST" action="">
     <?=$this->getTokenField() ?>
